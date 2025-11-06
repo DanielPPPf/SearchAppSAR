@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sombra sutil -->
+    <item android:top="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#10000000" />
+            <size android:width="40dp" android:height="40dp" />
+        </shape>
+    </item>
+
+    <!-- Fondo del botón -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#ffffff" />
+            <stroke android:width="1dp" android:color="#e5e7eb" />
+            <size android:width="40dp" android:height="40dp" />
+        </shape>
+    </item>
+</layer-list>

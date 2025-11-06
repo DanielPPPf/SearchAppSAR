@@ -1,0 +1,22 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sombra sutil -->
+    <item android:top="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#15667eea" />
+            <size android:width="44dp" android:height="44dp" />
+        </shape>
+    </item>
+
+    <!-- Fondo con gradiente -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:angle="135"
+                android:startColor="#667eea"
+                android:endColor="#764ba2"
+                android:type="linear" />
+            <size android:width="44dp" android:height="44dp" />
+        </shape>
+    </item>
+</layer-list>

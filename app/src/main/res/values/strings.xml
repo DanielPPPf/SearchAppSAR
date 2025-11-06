@@ -1,3 +1,114 @@
 <resources>
     <string name="app_name">BuscadorSAR</string>
+    <!-- Home Screen -->
+    <string name="home_title">BUSCADOR</string>
+    <string name="home_subtitle">Personas Desaparecidas</string>
+    <string name="btn_new_search">NUEVA BÚSQUEDA</string>
+    <string name="btn_new_search_desc">Iniciar búsqueda de persona</string>
+    <string name="btn_my_searches">MIS BÚSQUEDAS</string>
+    <string name="btn_my_searches_desc">Ver búsquedas guardadas</string>
+    <string name="btn_help">CÓMO USAR</string>
+    <string name="btn_help_desc">Tutorial paso a paso</string>
+    <string name="badge_count">%d</string>
+
+    <!-- Location Screen -->
+    <string name="location_title">Ubicación</string>
+    <string name="location_question">¿Dónde se vio\npor última vez?</string>
+    <string name="location_subtitle">Seleccione una opción</string>
+    <string name="opt_current_location">AQUÍ MISMO</string>
+    <string name="opt_current_location_desc">Usar ubicación actual</string>
+    <string name="opt_map">EN EL MAPA</string>
+    <string name="opt_map_desc">Tocar lugar en mapa</string>
+    <string name="opt_write">ESCRIBIR</string>
+    <string name="opt_write_desc">Ingresar dirección</string>
+
+    <!-- Info Screen -->
+    <string name="info_title">Información</string>
+    <string name="info_question">Datos adicionales</string>
+    <string name="info_subtitle">Opcional - ayuda a mejorar la búsqueda</string>
+    <string name="time_label">⏰ ¿Hace cuánto?</string>
+    <string name="mobility_label">🚶 ¿Cómo se movía?</string>
+    <string name="time_1h">1 hora</string>
+    <string name="time_3h">3 horas</string>
+    <string name="time_6h">6 horas</string>
+    <string name="time_1d">1 día</string>
+    <string name="time_3d">3 días</string>
+    <string name="time_1w">1 semana</string>
+    <string name="mobility_walk">A pie</string>
+    <string name="mobility_car">Carro</string>
+    <string name="mobility_bike">Bicicleta</string>
+    <string name="mobility_moto">Moto</string>
+
+    <!-- Loading Screen -->
+    <string name="loading_title">Calculando zona \n de búsqueda...</string>
+    <string name="loading_subtitle">Por favor espere unos momentos</string>
+
+    <!-- Result Screen -->
+    <string name="result_title">Resultado</string>
+    <string name="map_placeholder">MAPA INTERACTIVO</string>
+    <string name="map_subtitle">Zonas de probabilidad</string>
+    <string name="legend_title">🎯 ZONAS DE BÚSQUEDA</string>
+    <string name="legend_red">🟥 ROJA - ¡URGENTE!</string>
+    <string name="legend_red_desc">Buscar aquí primero</string>
+    <string name="legend_orange">🟧 NARANJA</string>
+    <string name="legend_orange_desc">Buscar después</string>
+    <string name="legend_yellow">🟨 AMARILLA</string>
+    <string name="legend_yellow_desc">Si no está arriba</string>
+    <string name="legend_green">🟩 VERDE</string>
+    <string name="legend_green_desc">Menos probable</string>
+    <string name="action_add_finding">AGREGAR\nHALLAZGO</string>
+    <string name="action_save">GUARDAR\nBÚSQUEDA</string>
+    <string name="action_share">COMPARTIR</string>
+    <string name="action_download">DESCARGAR</string>
+
+    <!-- Add Finding Screen -->
+    <string name="finding_title">Hallazgo</string>
+    <string name="finding_question">¿Qué encontraron?</string>
+    <string name="finding_subtitle">Seleccione el tipo de hallazgo</string>
+    <string name="finding_witness">TESTIGO</string>
+    <string name="finding_witness_desc">Alguien vio a la persona\n⭐ Alta confianza</string>
+    <string name="finding_object">OBJETO</string>
+    <string name="finding_object_desc">Ropa o pertenencia\n⭐ Media confianza</string>
+    <string name="finding_trace">RASTRO</string>
+    <string name="finding_trace_desc">Huella o señal\n⭐ Baja confianza</string>
+    <string name="finding_location_label">📍 ¿Dónde?</string>
+    <string name="finding_use_location">📍 USAR MI UBICACIÓN</string>
+    <string name="finding_use_map">🗺️ MARCAR EN MAPA</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Mis Búsquedas</string>
+    <string name="status_active">ACTIVA</string>
+
+    <!-- Help Screen -->
+    <string name="help_title">Ayuda</string>
+    <string name="tutorial_title">Tutorial</string>
+    <string name="tutorial_subtitle">Paso a paso</string>
+    <string name="tutorial_1_title">Nueva Búsqueda</string>
+    <string name="tutorial_1_text">Presiona el botón verde grande para iniciar una nueva búsqueda de persona desaparecida.</string>
+    <string name="tutorial_2_title">Última Ubicación</string>
+    <string name="tutorial_2_text">Indica dónde vieron a la persona por última vez. Puedes usar tu ubicación actual, tocar en el mapa o escribir la dirección.</string>
+    <string name="tutorial_3_title">Ver Zonas</string>
+    <string name="tutorial_3_text">El mapa te mostrará las zonas donde buscar. ROJO es lo más urgente, VERDE es menos probable.</string>
+    <string name="tutorial_4_title">Agregar Hallazgos</string>
+    <string name="tutorial_4_text">Si encuentras algo (testigo, ropa, rastro), agrégalo y el mapa se actualizará automáticamente.</string>
+
+    <!-- Common Buttons -->
+    <string name="btn_back">← ATRÁS</string>
+    <string name="btn_continue">CONTINUAR →</string>
+    <string name="btn_skip">OMITIR</string>
+    <string name="btn_calculate">CALCULAR</string>
+    <string name="btn_cancel">CANCELAR</string>
+    <string name="btn_add_recalculate">AGREGAR Y RECALCULAR</string>
+    <string name="btn_understood">✓ ENTENDIDO</string>
+
+    <!-- Common -->
+    <string name="help_icon">❓</string>
+    <string name="refresh_icon">🔄</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="clock">🕐</string>
 </resources>

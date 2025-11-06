@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="primary">#667eea</color>
+    <color name="primary_dark">#5568d3</color>
+    <color name="secondary">#764ba2</color>
+    <color name="secondary_dark">#5c3a7f</color>
+
+
     <!-- Primary Colors - Opción B -->
     <color name="gradient_start">#667eea</color>
     <color name="gradient_end">#764ba2</color>
@@ -39,4 +46,6 @@
     <!-- System -->
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+
+    <color name="primary_light">#E8EAFF</color>
 </resources>

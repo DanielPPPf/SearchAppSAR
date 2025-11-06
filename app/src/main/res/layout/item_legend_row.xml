@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_md"
+    android:background="@color/gray_50"
+    android:layout_marginBottom="@dimen/spacing_md"
+    android:gravity="center_vertical">
+
+    <View
+        android:id="@+id/legendColor"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/circle_button_background"
+        android:layout_marginEnd="@dimen/spacing_md" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/legendTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🟥 ROJA - ¡URGENTE!"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/gray_800"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/legendDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar aquí primero"
+            android:textSize="@dimen/text_xs"
+            android:textColor="@color/gray_500" />
+    </LinearLayout>
+</LinearLayout>

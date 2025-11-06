@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_alt">
+
+    <!-- Header (reutilizar componente) -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_lg"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:elevation="@dimen/elevation_sm"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_button_background"
+            android:text="←"
+            android:textSize="@dimen/text_xxl" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/finding_title"
+            android:textSize="@dimen/text_lg"
+            android:textColor="@color/gray_800"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_xl">
+
+            <!-- Section Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/spacing_xxl">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔎"
+                    android:textSize="48sp"
+                    android:layout_marginBottom="@dimen/spacing_md" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finding_question"
+                    android:textSize="@dimen/text_xxl"
+                    android:textColor="@color/gray_800"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_xs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finding_subtitle"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/gray_500"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Finding Type Options -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/spacing_xxxl">
+
+                <!-- Witness -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/optionWitness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_lg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="@dimen/radius_lg"
+                    app:cardElevation="@dimen/elevation_md"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="@color/gray_200">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_xl"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👁️"
+                            android:textSize="56sp"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/finding_witness"
+                            android:textSize="@dimen/text_lg"
+                            android:textColor="@color/gray_800"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="@dimen/spacing_xs" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/finding_witness_desc"
+                            android:textSize="@dimen/text_sm"
+                            android:textColor="@color/gray_500"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Object -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/optionObject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_lg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="@dimen/radius_lg"
+                    app:cardElevation="@dimen/elevation_md"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="@color/gray_200">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_xl"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👕"
+                            android:textSize="56sp"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/finding_object"
+                            android:textSize="@dimen/text_lg"
+                            android:textColor="@color/gray_800"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="@dimen/spacing_xs" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/finding_object_desc"
+                            android:textSize="@dimen/text_sm"
+                            android:textColor="@color/gray_500"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Trace -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/optionTrace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="@dimen/radius_lg"
+                    app:cardElevation="@dimen/elevation_md"
+                    app:strokeWidth="3dp"
+                    app:strokeColor="@color/gray_200">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_xl"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👣"
+                            android:textSize="56sp"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/finding_trace"
+                            android:textSize="@dimen/text_lg"
+                            android:textColor="@color/gray_800"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="@dimen/spacing_xs" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/finding_trace_desc"
+                            android:textSize="@dimen/text_sm"
+                            android:textColor="@color/gray_500"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Location Selection Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/radius_lg"
+                app:cardElevation="@dimen/elevation_md"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_xl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/finding_location_label"
+                        android:textSize="@dimen/text_md"
+                        android:textColor="@color/gray_800"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/spacing_lg" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUseCurrentLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_md"
+                        android:layout_marginBottom="@dimen/spacing_md"
+                        android:text="@string/finding_use_location"
+                        android:textSize="@dimen/text_md"
+                        android:backgroundTint="@color/green_primary"
+                        app:cornerRadius="@dimen/radius_lg" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUseMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_md"
+                        android:text="@string/finding_use_map"
+                        android:textSize="@dimen/text_md"
+                        android:backgroundTint="@color/gray_100"
+                        android:textColor="@color/gray_800"
+                        app:cornerRadius="@dimen/radius_lg" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_xl"
+        android:background="@color/white"
+        android:elevation="@dimen/elevation_md"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height_md"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:text="@string/btn_cancel"
+            android:textSize="@dimen/text_md"
+            android:backgroundTint="@color/gray_100"
+            android:textColor="@color/gray_800"
+            app:cornerRadius="@dimen/radius_lg" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddAndRecalculate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height_md"
+            android:layout_weight="2"
+            android:text="@string/btn_add_recalculate"
+            android:textSize="@dimen/text_sm"
+            android:backgroundTint="@color/green_primary"
+            app:cornerRadius="@dimen/radius_lg" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
